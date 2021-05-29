@@ -1,0 +1,20 @@
+.answer_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  .answer {
+    padding: .5rem;
+    background: #e5e5e5;
+    margin: .5rem;
+    border-radius: 10px;
+    border: 1px solid #cdcdcd;
+    transition: .2s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      background: white;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

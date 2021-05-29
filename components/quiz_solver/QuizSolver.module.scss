@@ -1,0 +1,23 @@
+.solver {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .alert_show {
+    color: red;
+    text-align: center;
+    transition: .4s ease-out;
+  }
+
+  .alert_hidden {
+    color: transparent;
+  }
+}

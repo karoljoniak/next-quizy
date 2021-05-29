@@ -1,0 +1,22 @@
+.checkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .input {
+    min-width: 1rem;
+    min-height: 1rem;
+    margin-right: 2rem;
+    transition: ease-in-out .2s;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .label {
+    font: {
+      weight: 500;
+      size: 0.8rem;
+    }
+  }
+}

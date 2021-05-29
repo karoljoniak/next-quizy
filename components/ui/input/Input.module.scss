@@ -1,0 +1,52 @@
+@mixin border {
+  height: 3rem;
+  border: 1px solid #2E2C2D;
+  border-radius: 7px;
+  padding: 0 1rem;
+  transition: ease-in-out .2s;
+  &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: .5rem 0;
+
+  .label {
+    font: {
+      weight: 500;
+      size: 0.8rem;
+    }
+  }
+  .empty_input {
+
+    @include border;
+
+    &::placeholder{
+      color: #E2E2E2;
+    }
+  }
+  .input {
+    color: #0D0B0B;
+    @include border;
+  }
+}
+
+.fill {
+  background: inherit;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 0 1rem;
+  transition: ease-in-out .2s;
+  &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  color: white;
+
+
+}

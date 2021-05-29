@@ -1,0 +1,44 @@
+@mixin mix {
+  border-radius: 7px;
+  height: 15rem;
+  overflow: scroll;
+  resize: none;
+  border: 1px solid #2E2C2D;
+  padding: 1rem;
+  font: {
+    weight: 500;
+    size: 0.8rem;
+  }
+  transition: ease-in-out .2s;
+  &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 8rem;
+
+  margin: 1rem 0;
+
+  .label {
+    font: {
+      weight: 500;
+      size: 0.8rem;
+    }
+  }
+
+  .textarea {
+    @include mix;
+    color: #0D0B0B;
+  }
+
+  .empty_textarea {
+    @include mix;
+    &::placeholder{
+      color: #E2E2E2;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.quiz_main_wrapper {
+  width: 90%;
+  margin: 5%;
+
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  .title {
+    text-align: center;
+  }
+
+  .time {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,51 @@
+@mixin flex_col_center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_form_wrapper {
+  padding: 1rem;
+  @include flex_col_center;
+
+  .paragraphs_wrapper {
+    width: 100%;
+    .header1 {
+      align-self: flex-start;
+      font: {
+        weight: bold;
+        size: 1.2rem;
+      }
+
+      margin: 0.5rem 0;
+    }
+    .header2 {
+      align-self: flex-start;
+      font: {
+        size: 0.8rem;
+      }
+      margin: 0.5rem 0;
+    }
+  }
+
+  .input_wrapper {
+    @include flex_col_center;
+  }
+
+  .topic_message_wrapper {
+    @include flex_col_center;
+  }
+
+  .submit_wrapper {
+    @include flex_col_center;
+  }
+}
+
+
+@media (min-width: 40rem) {
+  .main_form_wrapper{
+    width: clamp(30rem, 40%, 60rem);
+  }
+}

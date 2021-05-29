@@ -1,0 +1,29 @@
+.question {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  .list {
+    padding: 0;
+    .answer {
+      display: flex;
+      flex-direction: row;
+      .input {
+        margin-right: 1rem;
+      }
+      .red {
+        color: red;
+        list-style-type: none;
+      }
+
+      .green {
+        color: green;
+        list-style-type: none;
+      }
+    }
+
+  }
+
+}

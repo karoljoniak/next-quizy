@@ -1,0 +1,20 @@
+.quiz {
+  margin: 1rem auto 0 auto;
+  border-radius: 10px;
+  width: clamp(20rem, 80%, 80rem);
+  height: 4rem;
+  background: #fafafa;
+  transition: .2s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    text-align: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: #eeeeee;
+  }
+}
